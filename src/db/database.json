@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": 1,
+    "title": "아메리칸 크림",
+    "price": 5200,
+    "description": "신선한 레몬에 경쾌함을 더해 줄 레몬 머틀을 더했습니다. 시칠리아산 레몬오일과 올리브,로즈마리가 듬뿍담긴 '몬탈바노'는 반짝반짝 아름다운 머릿결로 가꾸는데 도움을 줍니다.",
+    "category": "showerjell",
+    "image": "https://lush.co.kr/data/goods/19/01/04/1000000161/1000000161_detail_02.png"
+  },
+  {
+    "id": 2,
+    "title": "빅 보틀 오브 캄버블 보틀 ",
+    "price": 6300,
+    "description": "라벤더와 카모마일을 그대에게 , 밤낮을 가리지 않고 열심히 일한 당신이라면 잠시 멈춰보세요! 보랏빛 입욕 세계로 떠날 시간입니다.",
+    "category": "Bubblebar",
+    "image": "https://lush.co.kr/data/goods/20/02/09/1000001244/1000001244_main_091.png"
+  },
+  {
+    "id": 3,
+    "title": "가디스 워시 카드",
+    "price": 4000,
+    "description": "세정력과 진한 향기를 자랑하는 카드형태의 제품입니다. 질좋은 에센셜오일이 듬뿍담긴 워시카드와 언제나 함께하세요",
+    "category": "Soap",
+    "image": "https://lush.co.kr/data/goods/19/02/09/1000000441/1000000441_main_018.png"
+  },
+  {
+    "id": 4,
+    "title": "브레스 오브 갓 워시 카드",
+    "price": 4000,
+    "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+    "category": "Soap",
+    "image": "https://lush.co.kr/data/goods/17/10/10/289/289_main_039.png"
+  },
+  {
+    "id": 5,
+    "title": "허니 아이 워시드 마이 헤어",
+    "price": 5300,
+    "description": "달콤한 꿀 항아리에 베르가못의 상쾌함 한 방울! 듬뿍담긴 꿀은 부드럽고 윤기나는 머릿결로 가꿔줍니다.",
+    "category": "Shampoobar",
+    "image": "https://lush.co.kr/data/goods/16/04/19/196/196_main_065.png"
+  }
+]

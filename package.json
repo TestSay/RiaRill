@@ -1,0 +1,41 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "email-validator": "^2.0.4",
+    "firebase": "^8.6.5",
+    "js-cookie": "^2.2.1",
+    "mobx": "^6.3.0",
+    "mobx-react": "^7.1.0",
+    "nex": "^2.0.22",
+    "next": "^10.2.0",
+    "pressure": "^2.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-firebase-hooks": "^3.0.4",
+    "react-hooks-svgdrawing": "^2.1.2",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "@types/react": "^17.0.5",
+    "@types/styled-components": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
+  }
+}
