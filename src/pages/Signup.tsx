@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { auth, GoogleauthProvider, GuestauthProvider } from '../../initFirebase'
-import firebase from 'firebase/app'
+import { auth } from '../../initFirebase'
 import { Form } from '../Components'
 import * as ROUTES from '../constants/routes'
 import { useRouter } from 'next/router'
@@ -22,7 +21,6 @@ export default function Signup() {
         result.user
           .updateProfile({
             displayName: firstName,
-            photoURL: Math.floor(Math.random() * 5) + 1,
           })
           .then(() => {
             history.push(ROUTES.BROWSE)

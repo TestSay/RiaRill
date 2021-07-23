@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useCollection } from 'react-firebase-hooks/firestore'
 import { db } from '../../initFirebase'
 import { Ma } from '../Components'
 function Posts() {
@@ -21,7 +20,7 @@ function Posts() {
     <Ma>
       <Ma.Wrap>
         {posts.map(({ id, proname, pronum }) => (
-          <Ma.Card key={id} preventSwipe={['up', 'down']} onSwipe={(dir) => swiped(dir, proname)}>
+          <Ma.Card key={id}>
             <Ma.Block>
               <Ma.Colum>
                 <Ma.Title>Dear</Ma.Title>
