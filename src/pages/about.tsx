@@ -3,7 +3,6 @@ import firebase from 'firebase/app'
 import { db, Storage, auth } from '../../initFirebase'
 import KKakkContainer from '../containers/kka'
 import Posts from './Posts'
-import { Upload } from '../Components'
 
 function About() {
   const Productinputoption = { productNum: '', productName: '', productPrize: '', image: '' }
@@ -70,35 +69,24 @@ function About() {
   }
 
   return (
-    <Upload>
-      <Upload.Wrap>
-        <Upload.Colum>
-          <Upload.Row>
-            <Upload.Form onSubmit={handleSubmit}>
-              <label>productNum</label> <Upload.Input type="string" name="productNum" onChange={handleChange} />
-              <label>productName</label>
-              <Upload.Input
-                type="string"
-                name="productName"
-                onChange={handleChange}
-                placeholder={`${form.productPrize}`}
-              />
-              <label>productPrize</label>
-              <Upload.Input type="string" name="productPrize" onChange={handleChange} />
-              <input type="file" name="productImage" ref={inputRef} onChange={addImage} accept="image/jpeg" />
-              <button style={{ marginTop: '15px' }} type="submit">
-                등록
-              </button>
-            </Upload.Form>
-            {imageToPost && (
-              <Upload.Imgbox onClick={removeImage}>
-                <img style={{ width: '100%', height: '100%' }} src={imageToPost} />
-              </Upload.Imgbox>
-            )}
-          </Upload.Row>
-        </Upload.Colum>
-      </Upload.Wrap>
-    </Upload>
+    <>
+      <form onSubmit={handleSubmit}>
+        <label>productNum</label> <input type="string" name="productNum" onChange={handleChange} />
+        <label>productName</label>
+        <input type="string" name="productName" onChange={handleChange} placeholder={`${form.productPrize}`} />
+        <label>productPrize</label>
+        <input type="string" name="productPrize" onChange={handleChange} />
+        <input type="file" name="productImage" ref={inputRef} onChange={addImage} accept="image/jpeg" />
+        <button style={{ marginTop: '15px' }} type="submit">
+          등록
+        </button>
+      </form>
+      {imageToPost && (
+        <div onClick={removeImage}>
+          <img style={{ width: '100%', height: '100%' }} src={imageToPost} />
+        </div>
+      )}
+    </>
   )
 }
 

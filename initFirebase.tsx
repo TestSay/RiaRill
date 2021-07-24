@@ -7,14 +7,13 @@ import 'firebase/analytics'
 import 'firebase/performance'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCzGZ3Em4go1TLMcMAWRW4VoEf8SB7kGCA',
-  authDomain: 'yourdocent.firebaseapp.com',
-  databaseURL: 'https://yourdocent.firebaseio.com',
-  projectId: 'yourdocent',
-  storageBucket: 'yourdocent.appspot.com',
-  messagingSenderId: '576248456563',
-  appId: '1:576248456563:web:4226a51dc355300f2dd106',
-  measurementId: 'G-P1BP6PF7CW',
+  apiKey: 'AIzaSyBgVNrhaUG_EFOExO7_9knnKGuYx_PGIo8',
+  authDomain: 'perrychriss-e3b80.firebaseapp.com',
+  projectId: 'perrychriss-e3b80',
+  storageBucket: 'perrychriss-e3b80.appspot.com',
+  messagingSenderId: '951775111575',
+  appId: '1:951775111575:web:ea449b3df16f0db367bcd2',
+  measurementId: 'G-TN2MB1CTC4',
 }
 
 const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app()

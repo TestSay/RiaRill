@@ -17,22 +17,9 @@ function Posts() {
   }, [])
 
   return (
-    <Ma>
-      <Ma.Wrap>
-        {posts.map(({ id, proname, pronum }) => (
-          <Ma.Card key={id}>
-            <Ma.Block>
-              <Ma.Colum>
-                <Ma.Title>Dear</Ma.Title>
-                <Ma.Title>Dear:{proname}</Ma.Title>
-                <Ma.Text>{pronum}</Ma.Text>
-              </Ma.Colum>
-              <Ma.Image src={proname} />
-            </Ma.Block>
-          </Ma.Card>
-        ))}
-      </Ma.Wrap>
-    </Ma>
+    <>
+      <div></div>
+    </>
   )
 }
 

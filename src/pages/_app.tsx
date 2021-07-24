@@ -8,7 +8,7 @@ import GlobalStyle from '../../styles/reset'
 // 전체 스타일 초기화
 import theme from '../../styles/theme'
 // styled-component // theme 테마 적용
-import store from '../store/Rootstore'
+import todostore from '../store/Rootstore'
 // store provid 해주기 위한 전체적용 store
 import FooterContainer from '../containers/Footer'
 import HeaderContainer from '../containers/Header'
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover" />
       </Head>
-      <Provider {...store}>
+      <Provider {...todostore}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
           <HeaderContainer />

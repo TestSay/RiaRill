@@ -8,11 +8,11 @@ export const Container = styled.header`
   color: white;
 `
 export const Nav = styled.a`
-  fontsize: 40px;
+  font-size: 40px;
   display: flex;
-  justifycontent: space-between;
+  justify-content: space-between;
   width: 100vw;
-  backgroundcolor: #fffff50;
+  background-color: #ffffff50;
 `
 
 export const Logo = styled.div`
@@ -22,7 +22,7 @@ export const Link = styled.a`
   font-size: 40px;
   display: flex;
   width: 100%;
-  backgroundcolor: #fffff50;
+  background-color: #ffffff50;
   padding: 0px 20px;
   justify-content: center;
 `

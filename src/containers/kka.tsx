@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import firebase from 'firebase/app'
-import { db, Storage, auth } from '../../initFirebase'
-import { Upload } from '../Components'
+import { db, Storage } from '../../initFirebase'
 
 function kka() {
   const Productinputoption = { productNum: '', productName: '', productPrize: '', image: '' }
@@ -69,15 +68,15 @@ function kka() {
   }
 
   return (
-    <Upload>
-      <Upload.Wrap>
+    <>
+      <>
         <form onSubmit={handleSubmit}>
-          <label>productNum</label> <Upload.Input type="string" name="productNum" onChange={handleChange} />
+          <label>productNum</label> <input type="string" name="productNum" onChange={handleChange} />
           <label>productName</label>
-          <Upload.Input type="string" name="productName" onChange={handleChange} placeholder={`${form.productPrize}`} />
+          <input type="string" name="productName" onChange={handleChange} placeholder={`${form.productPrize}`} />
           <label>productPrize</label>
-          <Upload.Input type="string" name="productPrize" onChange={handleChange} />
-          <Upload.Input type="file" name="productImage" ref={inputRef} onChange={addImage} accept="image/jpeg" />
+          <input type="string" name="productPrize" onChange={handleChange} />
+          <input type="file" name="productImage" ref={inputRef} onChange={addImage} accept="image/jpeg" />
           <button type="submit">test</button>
         </form>
         {imageToPost && (
@@ -85,8 +84,8 @@ function kka() {
             <img src={imageToPost} />
           </div>
         )}
-      </Upload.Wrap>
-    </Upload>
+      </>
+    </>
   )
 }
 
